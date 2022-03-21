@@ -6,8 +6,22 @@ Watch [video tutorial](https://youtu.be/K4YSItm8btE) to learn how this component
 
 ### Install
 
+Run the following command in your Node based project
+
+```
+npm install cwco
+```
+
+...or paste the following script in the head of your HTML file
+
+```html 
+<script src="https://unpkg.com/cwco/dist/cwco.min.js"></script>
+```
+
 Simply copy the [theme-provider.component.ts](https://github.com/beforesemicolon/cwco-component-examples/blob/main/theme-provider/theme-provider.component.ts) 
-file into your project which already has [cwco](https://cwco.io/) installed ( `npm install cwco` );
+file into your project.
+
+Follow [this guide](https://cwco.io/documentation/getting-started) if you want to use it projects like React, Angular, Vue, etc.
 
 ### Usage
 
