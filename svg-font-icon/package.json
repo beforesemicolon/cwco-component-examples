@@ -1,0 +1,32 @@
+{
+  "name": "blank-project",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "local": "vite",
+    "svg:optmize": "svgo -f ./src/icons -o ./src/icons",
+    "svg:to-font": "svgtofont --sources ./src/icons --output ./src/fonts",
+    "svg:all": "npm run svg:optmize && npm run svg:to-font"
+  },
+  "svgtofont": {
+    "fontName": "bfs",
+    "website": false,
+    "outSVGReact": false,
+    "css": {
+      "output": "./src",
+      "fileName": "bfs-icon",
+      "include": "\\.(css)$",
+      "cssPath": "./fonts/"
+    }
+  },
+  "devDependencies": {
+    "path-that-svg": "^1.2.4",
+    "svgo": "^2.8.0",
+    "svgtofont": "^3.17.6",
+    "typescript": "^4.5.4",
+    "vite": "^2.8.0"
+  },
+  "dependencies": {
+    "cwco": "^1.5.5"
+  }
+}
