@@ -1,6 +1,6 @@
-import {WebComponent} from 'cwco';
+import {ContextProviderComponent} from 'cwco';
 
-class BFSIcon extends WebComponent {
+class BFSIcon extends ContextProviderComponent {
 	static observedAttributes = [
 		'name',
 		'size',
@@ -10,9 +10,11 @@ class BFSIcon extends WebComponent {
 	size = '16px';
 	color = '#000';
 	
-	get iconName() {
-		return this.name || (this.textContent || '').trim();
-	}
+	// only need this if BFSIcon extends WebComponent instead
+	// because using "textContent" will be always empty for ContextProviderComponent
+	// get iconName() {
+	// 	return this.name || (this.textContent || '').trim();
+	// }
 	
 	get fontSize() {
 		switch (this.size) {
@@ -56,7 +58,7 @@ class BFSIcon extends WebComponent {
 	
 	get template() {
 		return `
-			<i class="bfs-{this.iconName} icon"
+			<i class="bfs-{name} icon"
 				attr.style.font-size="{this.fontSize}, size"
 				attr.style.color="{this.accent}, color"
 				></i>`
