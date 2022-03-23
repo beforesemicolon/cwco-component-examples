@@ -4,19 +4,25 @@ A component that handles how you display icons in your app with customization op
 
 Watch the [Tutorial Video]() for full details on this component.
 
-### Setup
+### Install
 
-Make sure you have [cwco](https://cwco.io/) installed in your project
+Run the following command in your Node based project
 
 ```
 npm install cwco
 ```
 
-or add the link to your HTML file 
+...or paste the following script in the head of your HTML file
 
-```html
+```html 
 <script src="https://unpkg.com/cwco/dist/cwco.min.js"></script>
 ```
+
+Simply copy the component file into your project.
+
+Follow [this guide](https://cwco.io/documentation/getting-started) if you want to use it in projects like React, Angular, Vue, etc.
+
+### Generate SVG Icon Font
 
 You need to also install packages that handle the icon optimization and change into fonts.
 
@@ -28,8 +34,6 @@ npm install svgtofont
 Then copy the  `svg:optmize`, `svg:to-font` and `svg:all` scripts to your [package.json]() file along with the
 `svgtofont` options where you need to configure according to your need. Check the [svgtofont](https://www.npmjs.com/package/svgtofont)
 package for more details.
-
-### Generate SVG Icon Fonts
 
 1 - Add all your SVG icon files into the [icons]() directory;
 
