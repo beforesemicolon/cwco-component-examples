@@ -12,6 +12,12 @@ Make sure you have [cwco](https://cwco.io/) installed in your project
 npm install cwco
 ```
 
+or add the link to your HTML file 
+
+```html
+<script src="https://unpkg.com/cwco/dist/cwco.min.js"></script>
+```
+
 You need to also install packages that handle the icon optimization and change into fonts.
 
 ```
