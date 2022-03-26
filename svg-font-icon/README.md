@@ -2,7 +2,7 @@
 
 A component that handles how you display icons in your app with customization options per icon
 
-Watch the [Tutorial Video]() for full details on this component.
+Watch the [Tutorial Video](https://youtu.be/59ah9YJsVig) for full details on this component.
 
 ### Install
 
