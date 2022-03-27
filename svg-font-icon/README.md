@@ -2,7 +2,7 @@
 
 A component that handles how you display icons in your app with customization options per icon
 
-Watch the [Tutorial Video]() for full details on this component.
+Watch the [Tutorial Video](https://youtu.be/59ah9YJsVig) for full details on this component.
 
 ### Install
 
@@ -31,11 +31,11 @@ npm install svgo
 npm install svgtofont
 ```
 
-Then copy the  `svg:optmize`, `svg:to-font` and `svg:all` scripts to your [package.json]() file along with the
+Then copy the  `svg:optmize`, `svg:to-font` and `svg:all` scripts to your [package.json](https://github.com/beforesemicolon/cwco-component-examples/blob/main/svg-font-icon/package.json#L9) file along with the
 `svgtofont` options where you need to configure according to your need. Check the [svgtofont](https://www.npmjs.com/package/svgtofont)
 package for more details.
 
-1 - Add all your SVG icon files into the [icons]() directory;
+1 - Add all your SVG icon files into the [icons](https://github.com/beforesemicolon/cwco-component-examples/tree/main/svg-font-icon/src/icons) directory;
 
 2 - Make sure all your icons are 1:1 ratio (width and height values are the same)
 
@@ -48,8 +48,8 @@ package for more details.
 #### Attributes
 
 - `name`: The name of the icon;
-- `size`: The size for the icon. This can be any unit CSS value and any [custom named options]();
-- `color`: The color of your icon. This can be any CSS color value and any [custom named options]();
+- `size`: The size for the icon. This can be any unit CSS value and any [custom named options](https://github.com/beforesemicolon/cwco-component-examples/blob/main/svg-font-icon/src/icon.js#L20);
+- `color`: The color of your icon. This can be any CSS color value and any [custom named options](https://github.com/beforesemicolon/cwco-component-examples/blob/main/svg-font-icon/src/icon.js#L37);
 
 Change the `size` and `color` options to match your needs and system design theme.
 
